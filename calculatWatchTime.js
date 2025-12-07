@@ -1,4 +1,7 @@
 function calculatWatchTime(times) {
+    if (typeof times !== "number") {
+        return "invalid";
+    }
     let sum = 0;
     for (const time of times) {
         sum = sum + time;
