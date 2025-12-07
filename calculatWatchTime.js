@@ -1,9 +1,9 @@
 function calculatWatchTime(times) {
-    if (typeof times !== "number") {
-        return "invalid";
-    }
     let sum = 0;
     for (const time of times) {
+        if (typeof time !== "number") {
+            return "invalid";
+        }
         sum = sum + time;
     }
     const hour = Math.floor(sum / 3600);
@@ -13,10 +13,11 @@ function calculatWatchTime(times) {
     const second = Math.floor(remainingSecond % 60);
     return `${hour} hour ${minute} minute ${second} second`;
 }
-const facebook = 1800;
-const instragram = 500;
-const tiktok = 1200;
-const YouTube = 600;
+// const facebook = 1800;
+// const instragram = 500;
+// const tiktok = 1200;
+// const YouTube = 600;
 
-const result = calculatWatchTime([facebook, instragram, tiktok, YouTube]);
+// const result = calculatWatchTime([facebook, instragram, tiktok, YouTube]);
+const result = calculatWatchTime([2444, 5667, 567]);
 console.log("total time is:", result);
