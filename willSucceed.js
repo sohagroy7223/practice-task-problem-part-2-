@@ -15,5 +15,7 @@ function willSucceed(marks) {
         return false;
     }
 }
-const result = willSucceed([55, 75, 65, 41, 33, 0, 87, 91, 30]);
+const result1 = willSucceed([55, 75, 65, 41, 33, 0, 87, 91, 30]);
+const result = willSucceed([48, 48, 50, 50, 100]);
 console.log(result);
+console.log(result1);
